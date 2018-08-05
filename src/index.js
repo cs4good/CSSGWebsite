@@ -14,6 +14,8 @@ import 'slick-carousel';
 import './js/jquery.mb.YTPlayer.min.js';
 import './js/jquery.waypoints.min.js';
 import './js/jquery.easing.1.3.js';
+import request from 'superagent';
+import {CLIENT_ID, CAL_ID, API_KEY, SCOPES} from './keys.js';
 
 import whiteLogoIcon from './images/logo_whitescale.png';
 import logoIcon from './images/logo.png';
@@ -28,6 +30,44 @@ $(document).ready(function($) {
 
 	var whiteLogo = document.getElementById('white-logo');
 	whiteLogo.src = whiteLogoIcon;
+
+	var darkLogo = document.getElementById('dark-logo');
+	darkLogo.src = logoIcon;
+
+	var eventsList = document.getElementById('cal-list');
+
+	// get calendar events
+	let TIME_MIN = (new Date(2018, 2, 1)).toISOString();
+	let url = `https://www.googleapis.com/calendar/v3/calendars/${CAL_ID}/events?key=${API_KEY}&timeMin=${TIME_MIN}`;
+	request
+    .get(url)
+    .end((err, resp) => {
+      if (!err) {
+				// console.log(resp.text);
+        let events = [];
+        JSON.parse(resp.text).items.map((event) => {
+					if('start' in event && 'end' in event && 'summary' in event){
+						let start = ('date' in event.start) ? event.start.date : event.start.dateTime;
+						let end = ('date' in event.end) ? event.end.date : event.end.dateTime;
+						if (new Date(start) > new Date(TIME_MIN) && events.length < 4) {
+							events.push({
+								start: start,
+								end: end,
+								title: event.summary,
+							});
+							var p = document.createElement('p');
+							p.innerHTML = event.summary;
+							eventsList.appendChild(p);
+						}
+					}
+				});
+				if(events.length === 0) {
+					var p = document.createElement('p');
+					p.innerHTML = 'No events to show. Check back later!';
+					eventsList.appendChild(p);
+				}
+      }
+    });
 
 	var loader = function() {
 		
@@ -50,13 +90,15 @@ $(document).ready(function($) {
 			if (st > 150) {
 				if ( !navbar.hasClass('scrolled') ) {
 					navbar.addClass('scrolled');
-					whiteLogo.src = logoIcon;
+					whiteLogo.style.display = 'none';
+					darkLogo.style.display = 'inline';
 				}
 			} 
 			if (st < 150) {
 				if ( navbar.hasClass('scrolled') ) {
 					navbar.removeClass('scrolled sleep');
-					whiteLogo.src = whiteLogoIcon;
+					whiteLogo.style.display = 'inline';
+					darkLogo.style.display = 'none';
 				}
 			} 
 			if ( st > 350 ) {

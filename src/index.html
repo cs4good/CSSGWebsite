@@ -16,6 +16,7 @@
       <div class="container">
         <a class="navbar-brand" href="index.html">
             <img id="white-logo" width="auto" height="30" alt="">
+            <img id="dark-logo" width="auto" height="30" alt="" style="display:none">
         </a>
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#probootstrap-navbar" aria-controls="probootstrap-navbar" aria-expanded="false" aria-label="Toggle navigation">
           <span><i class="ion-navicon"></i></span>
@@ -42,9 +43,9 @@
             <div class="sub-heading">
               <p class="mb-4">An organization of technologists, designers, and thinkers passionate about maximizing the benefits of technology and mitigating its harms.</p>
               <p class="mb-5">
-                  <a class="btn btn-lg pb_outline-light smoothscroll" href="#section-pricing"><i class="fa fa-medium"></i></span></a>
-                  <a class="btn btn-lg pb_outline-light smoothscroll" href="#section-pricing"><i class="fa fa-facebook"></i></span></a>
-                  <a class="btn btn-lg pb_outline-light smoothscroll" href="#section-pricing"><i class="fa fa-envelope"></i></span></a>
+                  <a class="btn btn-lg pb_outline-light smoothscroll" href="https://medium.com/@cs4good" target="_blank"><i class="fa fa-medium"></i></span></a>
+                  <a class="btn btn-lg pb_outline-light smoothscroll" href="https://www.facebook.com/cs4good/" target="_blank"><i class="fa fa-facebook"></i></span></a>
+                  <a class="btn btn-lg pb_outline-light smoothscroll" href="https://mailman.stanford.edu/mailman/listinfo/cs-for-social-good" target="_blank"><i class="fa fa-envelope"></i></span></a>
                 </p>
             </div>
           </div> 
@@ -53,11 +54,8 @@
           <div class="col-md-5 relative align-self-center">
             
             <form action="#" class="bg-white rounded pb_form_v1">
-              <h2 class="mb-4 mt-0 text-center">CS+SG Community</h2>
-              <div class="form-group">
-                <input type="text" class="form-control pb_height-50 reverse" placeholder="Full name">
-              </div>
-              <div class="form-group">
+              <h2 class="mb-4 mt-0 text-center">Upcoming Events</h2>
+              <!-- <div class="form-group">
                 <input type="text" class="form-control pb_height-50 reverse" placeholder="Email">
               </div>
               <div class="form-group">
@@ -69,9 +67,11 @@
                     <option value="">Free</option>
                   </select>
                 </div>
+              </div> -->
+              <div id="cal-list">
               </div>
               <div class="form-group">
-                <input type="submit" class="btn btn-primary btn-lg btn-block pb_btn-pill  btn-shadow-blue" value="Register">
+                <a href="https://calendar.google.com/calendar/embed?src=16gvb0e5ne6ngs1vg29uib18l0%40group.calendar.google.com&ctz=America/Los_Angeles" target="_blank" class="btn btn-primary btn-lg btn-block pb_btn-pill btn-shadow-blue"><i class="fa fa-calendar"></i> Events GCal</a>
               </div>
             </form>
 
@@ -542,8 +542,6 @@
     
     <!-- loader -->
     <div id="pb_loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#1d82ff"/></svg></div>
-
-    <script src="main.js"></script>
 
 	</body>
 </html>

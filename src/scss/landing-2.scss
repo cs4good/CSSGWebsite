@@ -44,11 +44,11 @@ body {
 
 .pb_cover_v3, .pb_xl_py_cover {
 	a {
-		color: rgba(255,255,255,.5);
+		// color: rgba(255,255,255,.5);
 		border-bottom: 2px solid transparent;
 		&:hover {
 			color: rgba(255,255,255,1);
-			border-bottom: 2px solid rgba(255,255,255,1);
+			// border-bottom: 2px solid rgba(255,255,255,1);
 		}
 	}
 	.btn {
