@@ -413,6 +413,19 @@
 	
 }
 
+.cssg_gradient {
+	&:before {
+		@include pb_gradient(#06B9BA, #23F4BD, 45deg);
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+	
+}
+
 .overlay {
 	position: absolute;
 	left: 0;

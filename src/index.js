@@ -15,6 +15,8 @@ import './js/jquery.mb.YTPlayer.min.js';
 import './js/jquery.waypoints.min.js';
 import './js/jquery.easing.1.3.js';
 
+import whiteLogoIcon from './images/logo_whitescale.png';
+import logoIcon from './images/logo.png';
 import phoneIcon from './images/phone_3.png';
 
 $(document).ready(function($) {
@@ -23,6 +25,9 @@ $(document).ready(function($) {
 
 	var phoneImg = document.getElementById('phone-pic');
 	phoneImg.src = phoneIcon;
+
+	var whiteLogo = document.getElementById('white-logo');
+	whiteLogo.src = whiteLogoIcon;
 
 	var loader = function() {
 		
@@ -44,12 +49,14 @@ $(document).ready(function($) {
 
 			if (st > 150) {
 				if ( !navbar.hasClass('scrolled') ) {
-					navbar.addClass('scrolled');	
+					navbar.addClass('scrolled');
+					whiteLogo.src = logoIcon;
 				}
 			} 
 			if (st < 150) {
 				if ( navbar.hasClass('scrolled') ) {
 					navbar.removeClass('scrolled sleep');
+					whiteLogo.src = whiteLogoIcon;
 				}
 			} 
 			if ( st > 350 ) {
