@@ -17,24 +17,8 @@ import './js/jquery.easing.1.3.js';
 import request from 'superagent';
 import {CLIENT_ID, CAL_ID, API_KEY, SCOPES} from './keys.js';
 
-import whiteLogoIcon from './images/logo_whitescale.png';
-import logoIcon from './images/logo.png';
 import studioPresentation from './images/studio_presentation.png';
 import social from './images/social.png';
-import pres from './images/matt.jpg';
-import vp from './images/belce.jpg';
-import fo from './images/andrea.jpg';
-import dm from './images/jr.jpg';
-import internity1 from './images/nichelle.jpg';
-import internity2 from './images/julie.jpg';
-import internity3 from './images/peter.jpg';
-import fellowships from './images/ryan.jpg';
-import studio1 from './images/jack.jpg';
-import studio2 from './images/vik.jpg';
-import discussions from './images/cherry.jpg';
-import edoutreach1 from './images/sara.jpg';
-import edoutreach2 from './images/gunguk.jpg';
-import aisg from './images/karan.jpg';
 
 $(document).ready(function($) {
 
@@ -58,52 +42,7 @@ $(document).ready(function($) {
 	socialImg.src = social;
 
 	var whiteLogo = document.getElementById('white-logo');
-	whiteLogo.src = whiteLogoIcon;
-
 	var darkLogo = document.getElementById('dark-logo');
-	darkLogo.src = logoIcon;
-
-	var presImg = document.getElementById('pres-pic');
-	presImg.src = pres;
-	
-	var vpImg = document.getElementById('vp-pic');
-	vpImg.src = vp;
-
-	var foImg = document.getElementById('fo-pic');
-	foImg.src = fo;
-
-	var dmImg = document.getElementById('dm-pic');
-	dmImg.src = dm;
-
-	var internity1Img = document.getElementById('internity1-pic');
-	internity1Img.src = internity1;
-
-	var internity2Img = document.getElementById('internity2-pic');
-	internity2Img.src = internity2;
-
-	var internity3Img = document.getElementById('internity3-pic');
-	internity3Img.src = internity3;
-
-	var fellowshipsImg = document.getElementById('fellowships-pic');
-	fellowshipsImg.src = fellowships;
-
-	var studio1Img = document.getElementById('studio1-pic');
-	studio1Img.src = studio1;
-
-	var studio2Img = document.getElementById('studio2-pic');
-	studio2Img.src = studio2;
-
-	var discussionsImg = document.getElementById('discussions-pic');
-	discussionsImg.src = discussions;	
-
-	var edoutreach1Img = document.getElementById('edoutreach1-pic');
-	edoutreach1Img.src = edoutreach1;
-
-	var edoutreach2Img = document.getElementById('edoutreach2-pic');
-	edoutreach2Img.src = edoutreach2;
-
-	var aisgImg = document.getElementById('aisg-pic');
-	aisgImg.src = aisg;
 
 	var eventsList = document.getElementById('cal-list');
 
