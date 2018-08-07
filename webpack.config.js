@@ -37,8 +37,6 @@ module.exports = {
           path.resolve(__dirname, 'src/scss'),
           path.resolve(__dirname, 'src/fonts'),
         ],
-        // use: ExtractTextPlugin.extract({
-          // fallback: 'style-loader',
         use: [ 
           'style-loader',
           MiniCssExtractPlugin.loader,
@@ -56,15 +54,33 @@ module.exports = {
           },
           'sass-loader'
         ]
-        // }),
       },
       {
-        test: /\.(png|woff|woff2|eot|ttf|svg|gif)$/,
-        loader: 'url-loader?limit=100000'
+        test: /\.(woff|woff2|eot|ttf|svg|gif)$/,
+        loader: 'url-loader?limit=100000',
       },
       {
-        test: /\.jpg$/,
-        loader: 'file-loader'
+        test: /\.(png|jpg)$/,
+        use: [
+          'file-loader',
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              disable: true, // webpack@2.x and newer
+              mozjpeg: {
+                progressive: true,
+                quality: 65
+              },
+              optipng: {
+                enabled: false,
+              },
+              pngquant: {
+                quality: '65-90',
+                speed: 4
+              },
+            },
+          }
+        ],
       },
       {
         test: /bootstrap\/dist\/js\/umd\//, use: 'imports-loader?jQuery=jquery'
@@ -78,7 +94,8 @@ module.exports = {
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
       title: 'CS+Social Good',
-      template: 'src/index.html'
+      template: 'src/index.html',
+      favicon: 'src/favicon.ico',
     }),
     new webpack.ProvidePlugin({
       $: 'jquery',
