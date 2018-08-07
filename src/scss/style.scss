@@ -328,7 +328,7 @@ a {
 				content: "\f2c7";
 			}
 			&[aria-expanded="true"] {
-				color: theme-color('primary');
+				color: theme-color('cssg-teal');
 				border-bottom: 1px solid transparent;	
 				&:after {
 					content: "\f2f4";
@@ -588,4 +588,10 @@ a {
 // hidden
 .overflow-hidden {
 	overflow: hidden;
+}
+
+#studio-pic {
+	border-image: linear-gradient(to left, #743ad5 0%, #d53a9d 100%);
+	border-image-slice: 1;
+	border-width: 2px;
 }

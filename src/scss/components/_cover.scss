@@ -337,6 +337,7 @@
 	&:before {
 		opacity: .8;
 	}
+	background-image: url(../images/teamjump.jpg)
 }
 .cover-bg-opacity-9 {
 	&:before {
@@ -402,7 +403,7 @@
 
 .pb_gradient_v1 {
 	&:before {
-		@include pb_gradient(#665fee, #27c2de, 45deg);
+		@include pb_gradient(#22AA78, #06B9BA, 45deg);
 		content: "";
 		position: absolute;
 		top: 0;

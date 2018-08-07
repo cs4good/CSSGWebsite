@@ -3,6 +3,8 @@ const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+// const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: './src/index.js',
@@ -35,8 +37,11 @@ module.exports = {
           path.resolve(__dirname, 'src/scss'),
           path.resolve(__dirname, 'src/fonts'),
         ],
-        use: [
+        // use: ExtractTextPlugin.extract({
+          // fallback: 'style-loader',
+        use: [ 
           'style-loader',
+          MiniCssExtractPlugin.loader,
           'css-loader',
           {
             loader: "postcss-loader",
@@ -51,10 +56,15 @@ module.exports = {
           },
           'sass-loader'
         ]
+        // }),
       },
       {
         test: /\.(png|woff|woff2|eot|ttf|svg|gif)$/,
         loader: 'url-loader?limit=100000'
+      },
+      {
+        test: /\.jpg$/,
+        loader: 'file-loader'
       },
       {
         test: /bootstrap\/dist\/js\/umd\//, use: 'imports-loader?jQuery=jquery'
@@ -62,6 +72,9 @@ module.exports = {
     ]
   },
   plugins: [
+    new MiniCssExtractPlugin({
+      filename: 'style.css',
+    }),
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
       title: 'CS+Social Good',
@@ -83,5 +96,6 @@ module.exports = {
       Tooltip: "exports-loader?Tooltip!bootstrap/js/dist/tooltip",
       Util: 'exports-loader?Util!bootstrap/js/dist/util'
     }),
+    // new ExtractTextPlugin("style.css")
   ]
 };

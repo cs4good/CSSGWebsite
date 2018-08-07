@@ -3,17 +3,20 @@
 // Copy variables from `_variables.scss` to this file to override default values
 // without modifying source files.
 
-$blue:    #1d82ff;
-$indigo:  #4E3188;
-$purple:  #715CB0;
-$pink:    #FF5B9C;
-$red:     #EE0427;
-$orange:  #EF6C35;
-$yellow:  #FFD500;
-$green:   #00CA4C;
-$teal:    #89D9D0;
-$cyan:    #A5E9DB;
-$navy:    #021993;
+$blue:      #1d82ff;
+$indigo:    #4E3188;
+$purple:    #715CB0;
+$pink:      #FF5B9C;
+$red:       #EE0427;
+$orange:    #EF6C35;
+$yellow:    #FFD500;
+$green:     #00CA4C;
+$teal:      #89D9D0;
+$cyan:      #A5E9DB;
+$navy:      #021993;
+$cssg-green:#23F4BD;
+$cssg-teal: #06B9BA;
+$cssg-meadow: #985F99;
 
 $colors: (
   blue: $blue,
@@ -41,6 +44,9 @@ $theme-colors: (
   light: $gray-100,
   dark: $gray-800,
   navy: $navy,
+  cssg-green: $cssg-green,
+  cssg-teal: $cssg-teal,
+  cssg-meadow: $cssg-meadow,
 );
 
 $nav-link-padding-y: 2rem;
@@ -50,7 +56,7 @@ $body-color:    $gray-600;
 
 $headings-color:         $gray-900;
 
-$link-color:            theme-color("primary");
+$link-color:            theme-color("cssg-teal");
 $link-decoration:       none;
 $link-hover-color:      darken($link-color, 15%);
 $link-hover-decoration: none;
@@ -66,7 +72,7 @@ $btn-font-weight:                $font-weight-normal;
 $grid-gutter-width: 30px;
 
 
-$input-focus-border-color: theme-color("primary");
+$input-focus-border-color: theme-color("cssg-teal");
 
 
 $font-family-sans-serif: "Work Sans", Arial, sans-serif;

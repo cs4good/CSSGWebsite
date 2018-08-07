@@ -136,14 +136,14 @@
 							color: $gray-600!important;
 						}
 						&.active {
-							color: theme-color('primary')!important;
+							color: theme-color('cssg-teal')!important;
 						}
 					}
 					&.cta-btn {
 						> a {
 							> span {
 								border: none;
-								background: $green;
+								background: theme-color('cssg-meadow');
 								color: $white;
 							}
 						}
