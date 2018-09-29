@@ -595,3 +595,14 @@ a {
 	border-image-slice: 1;
 	border-width: 2px;
 }
+
+#apply-link {
+	color: rgba(255, 255, 255, 0.9);
+	border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+	transition: border 300ms ease;
+
+	&:hover {
+		color: white;
+		border-bottom: 2px solid rgba(255, 255, 255, 1);
+	}
+}
