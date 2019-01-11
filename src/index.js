@@ -82,7 +82,8 @@ $(document).ready(function($) {
 					}
 					var p = document.createElement('p');
 					var start_date = new Date(event.start);
-					p.innerHTML = `<span class="badge badge-pill badge-cssg-teal">${start_date.getMonth()+1}/${start_date.getUTCDate()}</span> ${event.title}`;
+					console.log(start_date);
+					p.innerHTML = `<span class="badge badge-pill badge-cssg-teal">${start_date.getMonth()+1}/${start_date.getDate()}</span> ${event.title}`;
 					eventsList.appendChild(p);
 				});
 				if(events.length === 0) {
