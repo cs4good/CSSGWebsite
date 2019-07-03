@@ -16,4 +16,4 @@ export {CLIENT_ID, CAL_ID, API_KEY, SCOPES};
 
 This file contains the API keys that allow us to fetch information about new events from the CS+Social Good Google Calendar. Contact mattsun@stanford.edu if you have questions.
 
-When you are done editing the website code run "npx webpack --config webpack.config.js" to package the website into "dist/". To upload the changes to the actual website, only upload the "dist/" directory. The dist folder is the optimized version of the website that is created by webpack for production. 
+When you are done editing the website code run "npx webpack --config webpack.config.js" to package the website into "dist/". To upload the changes to the actual website, only upload the "dist/" directory. The dist folder is the optimized version of the website that is created by webpack for production.
