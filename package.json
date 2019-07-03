@@ -20,32 +20,35 @@
   },
   "homepage": "https://github.com/jrcabansag/CSSGWebsite#readme",
   "devDependencies": {
-    "autoprefixer": "^9.1.0",
+    "autoprefixer": "^9.6.0",
     "bootstrap": "^4.3.1",
     "clean-webpack-plugin": "^0.1.19",
-    "css-loader": "^1.0.0",
+    "css-loader": "^1.0.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.2.0",
     "image-webpack-loader": "^4.6.0",
     "imagemin-webpack": "^3.0.0",
     "jquery": "^3.4.1",
-    "mini-css-extract-plugin": "^0.4.1",
+    "mini-css-extract-plugin": "^0.4.5",
     "node-sass": "^4.12.0",
     "postcss-loader": "^2.1.6",
     "sass-loader": "^7.1.0",
+    "save": "^2.4.0",
     "script-loader": "^0.7.2",
-    "slick-carousel": "^1.7.1",
+    "slick-carousel": "^1.8.1",
     "style-loader": "^0.21.0",
     "superagent": "^3.8.3",
     "transfer-webpack-plugin": "^0.1.4",
-    "url-loader": "^1.0.1",
-    "webpack": "^4.16.4",
-    "webpack-cli": "^3.1.0",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5",
     "webpack-dev-server": "^3.7.2"
   },
   "dependencies": {
+    "lodash": "^4.17.11",
     "npm": "^6.9.2",
-    "popper.js": "^1.14.4"
+    "popper": "^1.0.1",
+    "popper.js": "^1.14.7"
   }
 }
