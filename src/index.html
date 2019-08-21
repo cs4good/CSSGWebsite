@@ -495,7 +495,8 @@
           </div> 
           <div class="col-md-1"></div>
           <div class="col-md-5">
-             <form action="https://formcarry.com/s/7Wezs6bWw79" id="ajaxContact" method="POST" accept-charset="UTF-8" class="bg-white rounded pb_form_v1">
+             <form name="contact-form" method="post" data-netlify="true" netlify-honeypot="bot-field" accept-charset="UTF-8" class="bg-white rounded pb_form_v1">
+              <input hidden name="bot-field" />
               <h2 class="mb-4 mt-0 text-center">Contact Form</h2>
               <div class="form-group">
                 <input type="text" class="form-control py-3 reverse" placeholder="Name" name="name">
@@ -506,7 +507,6 @@
               <div class="form-group">
                 <textarea class="form-control py-3 reverse" rows="4" placeholder="Type your message here..." name="message"></textarea>
               </div>
-              <input type="hidden" name="_gotcha">
               <div class="form-group">
                 <input type="submit" class="btn btn-cssg-meadow btn-lg btn-block pb_btn-pill btn-shadow-meadow" value="Send Message">
               </div>
