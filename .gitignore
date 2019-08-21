@@ -1,2 +1,5 @@
-
+.gitignore
+node_modules
+netlify.toml
 src/keys.js
+dist/

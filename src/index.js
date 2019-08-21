@@ -95,25 +95,25 @@ $(document).ready(function($) {
 		});
 		
 	// ajax email form
-	$("#ajaxContact").submit(function(e){
-		e.preventDefault();
-		var href = $(this).attr("action");
-		$.ajax({
-				type: "POST",
-				dataType: "json",
-				url: href,
-				data: $(this).serialize(),
-				success: function(response){
-						if(response.status == "success"){
-							$("#ajaxContact").children(".form-group").remove();
-							$("#ajaxContact").append('<h1 class="text-center"><i class="ion-ios-checkmark-outline pb_icon-gradient"></i></h1><p class="text-center">Thanks for your message!</p>');
-						}else{
-							$("#ajaxContact").children(".form-group").remove();
-							$("#ajaxContact").append('<p class="text-center pt-2 pb-2">Oops, looks like there was an error on our end. Sorry!</p>');
-						}
-				}
-		});
-	});
+	// $("#ajaxContact").submit(function(e){
+	// 	e.preventDefault();
+	// 	var href = $(this).attr("action");
+	// 	$.ajax({
+	// 			type: "POST",
+	// 			dataType: "json",
+	// 			url: href,
+	// 			data: $(this).serialize(),
+	// 			success: function(response){
+	// 					if(response.status == "success"){
+	// 						$("#ajaxContact").children(".form-group").remove();
+	// 						$("#ajaxContact").append('<h1 class="text-center"><i class="ion-ios-checkmark-outline pb_icon-gradient"></i></h1><p class="text-center">Thanks for your message!</p>');
+	// 					}else{
+	// 						$("#ajaxContact").children(".form-group").remove();
+	// 						$("#ajaxContact").append('<p class="text-center pt-2 pb-2">Oops, looks like there was an error on our end. Sorry!</p>');
+	// 					}
+	// 			}
+	// 	});
+	// });
 
 	// scroll
 	var scrollWindow = function() {
