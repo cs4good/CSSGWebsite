@@ -30,11 +30,11 @@ input, textarea, p {
 }
 // selection
 ::selection {
-  background: $black; 
+  background: $black;
   color: $white;
 }
 ::-moz-selection {
-  background: $black; 
+  background: $black;
   color: $white;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -81,7 +81,7 @@ a {
 	&.light {
 		&:before {
 			background: rgba($white, .7)!important;
-		}	
+		}
 	}
 }
 .text-center {
@@ -93,9 +93,9 @@ a {
 		&.light {
 			&:before {
 				background: rgba($white, .7)!important;
-			}	
+			}
 		}
-	}		
+	}
 }
 
 // sections
@@ -155,7 +155,7 @@ a {
 			}
 		}
 	}
-}	
+}
 
 // testimonial
 .pb_testimonial_v1 {
@@ -177,10 +177,10 @@ a {
 		}
 		blockquote {
 			font-style: italic;
-			
+
 			p {
 				color: $gray-900;
-				
+
 				font-size: 18px;
 				cite {
 					display: block;
@@ -315,7 +315,7 @@ a {
 	.item {
 		> a {
 			display: block;
-			border-bottom: 1px solid $gray-200;	
+			border-bottom: 1px solid $gray-200;
 			padding: 10px 0;
 			position: relative;
 			color: $gray-700;
@@ -329,7 +329,7 @@ a {
 			}
 			&[aria-expanded="true"] {
 				color: theme-color('cssg-teal');
-				border-bottom: 1px solid transparent;	
+				border-bottom: 1px solid transparent;
 				&:after {
 					content: "\f2f4";
 				}
@@ -338,7 +338,7 @@ a {
 		> div {
 			*:last-child {
 				margin-bottom: 0;
-			}	
+			}
 		}
 	}
 }
@@ -431,7 +431,7 @@ a {
 				transition: .3s all ease-out;
 	    }
 	    &:hover, &:focus {
-	      outline: none; 
+	      outline: none;
 	      &:before {
 	      	background: rgba(0,0,0, .7);
 	      }
@@ -474,15 +474,15 @@ a {
 	}
 }
 
-// icons 
+// icons
 .pb_icon_v1 {
 	i {
 		&.flaticon {
 			&:before {
-				font-size: 80px; 
+				font-size: 80px;
 				margin: 0;
 				padding: 0;
-			}	
+			}
 		}
 	}
 }
@@ -535,7 +535,7 @@ a {
 				background: none;
 			}
 			&.slick-current {
-			
+
 				.pb_card_v2 {
 					background: none;
 				}
@@ -596,7 +596,7 @@ a {
 	border-width: 2px;
 }
 
-#apply-link {
+#apply-link, #past-work {
 	color: rgba(255, 255, 255, 0.9);
 	border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 	transition: border 300ms ease;
