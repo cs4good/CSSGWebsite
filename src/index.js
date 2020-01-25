@@ -48,7 +48,7 @@ $(document).ready(function($) {
 
 	// get calendar events
 	let TIME_MIN = (new Date()).toISOString();
-	let url = `https://www.googleapis.com/calendar/v3/calendars/${CAL_ID}/events?key=${API_KEY}&timeMin=${TIME_MIN}`;
+	let url = `https://www.googleapis.com/calendar/v3/calendars/${CAL_ID}/events?key=${API_KEY}&timeMin=${TIME_MIN}`//;&orderBy=startTime`;
 	request
     .get(url)
     .end((err, resp) => {
@@ -68,8 +68,8 @@ $(document).ready(function($) {
 						}
 					}
 				});
-				events.sort((x, y) => {
-					return new Date(x.start) > new Date(y.start);
+				events = events.sort((x, y) => {
+					return new Date(x.start) - new Date(y.start);
 				});
 				var firstElement = true;
 				events.map((event) => {
