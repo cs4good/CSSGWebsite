@@ -3,10 +3,15 @@ const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 // const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
+
 module.exports = {
+  node: {
+    fs: 'empty'
+  },
   entry: './src/index.js',
   mode: 'development',
   devtool: 'inline-source-map',
@@ -88,6 +93,7 @@ module.exports = {
     ]
   },
   plugins: [
+    new Dotenv(),
     new MiniCssExtractPlugin({
       filename: 'style.css',
     }),

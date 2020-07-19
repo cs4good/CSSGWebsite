@@ -15,14 +15,22 @@ import './js/jquery.mb.YTPlayer.min.js';
 import './js/jquery.waypoints.min.js';
 import './js/jquery.easing.1.3.js';
 import request from 'superagent';
-import {CLIENT_ID, CAL_ID, API_KEY, SCOPES} from './keys.js';
+// for local use
+// import {CLIENT_ID, CAL_ID, API_KEY, SCOPES} from './keys.js';
+// for deploymnet
+const CLIENT_ID = process.env.CLIENT_ID;
+const CAL_ID = process.env.CAL_ID;
+const API_KEY = process.env.API_KEY;
+const SCOPES = process.env.SCOPES;
+
 
 import studioPresentation from './images/studio_presentation.png';
 import social from './images/social.png';
 
-$(document).ready(function($) {
 
-	"use strict";
+
+$(document).ready(function($) {
+    "use strict";
 
 	// loader first !
 	var loader = function() {
@@ -34,6 +42,7 @@ $(document).ready(function($) {
 		}, 700);
 	};
 	loader();
+
 
 	var studioImg = document.getElementById('studio-pic');
 	studioImg.src = studioPresentation;
