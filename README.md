@@ -6,7 +6,7 @@ To get started, run "npm install" from the root directory. "npm run start" will 
 
 NOTE: the build will probably fail because there is supposed to be a file called `src/keys.js` or `.env` with the keys needed to launch the website. 
 
-For running the website from a local server there are two ways to configure the keys. You can edit the code at the imports in `src/index.js` to try either one of these two ways:
+For running the website from a local server there are two ways to configure the keys. You can edit the code at the imports in `src/index.js` to use either one of these two ways:
 
 1. Using a `src/keys.js` file with following values:
 ```
