@@ -31,7 +31,7 @@ These files contain the API keys that allow us to fetch information about new ev
 
 ### Manual Deploy
 When you are done editing the website code run `npx webpack --config webpack.config.js` 
-to package the website into `dist/`. To upload the changes to the actual website, only upload the "dist/" directory. The dist folder is the optimized version of the website that is created by webpack for production.
+to package the website into `dist/`. To upload the changes to the actual website, only upload the `dist/` directory. The dist folder is the optimized version of the website that is created by webpack for production.
 
 ### Automatic Deploy (New)
 Netfliy has removed(?) the ability to do manually deploy for custom sites, so we have setup integration with GitHub. Commits to `master` are deployed automatically. You will have to ensure your `src/index.js` is configued such that it imports the API key values from `process.env` (environment variables). These environment variables are set under `Deploy Settings -> Build & deploy -> Enivornment` on Netlify.   
