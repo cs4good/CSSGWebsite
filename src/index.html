@@ -1,599 +1,808 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126093570-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-126093570-1');
-    </script>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126093570-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-		<title>CS+Social Good</title>
-		<meta name="description" content="A student organization at Stanford dedicated to the intersection of technology and social impact.">
-		<meta name="keywords" content="CS4Good, technology, justice, social impact, CS+Social Good, computer science, society">
+    gtag('config', 'UA-126093570-1');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400|Work+Sans:300,400" rel="stylesheet">
-	</head>
-	<body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
-    <!-- loader -->
-    <nav class="navbar navbar-expand-lg navbar-dark pb_navbar pb_scrolled-light" id="pb-navbar">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-            <img id="white-logo" src="<%=require('./images/logo_whitescale.png')%>" width="auto" height="30" alt="White version of CS+Social Good logo">
-            <img id="dark-logo" src="<%=require('./images/logo.png')%>" width="auto" height="30" alt="Color version of CS+Social Good logo" style="display:none">
-        </a>
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#probootstrap-navbar" aria-controls="probootstrap-navbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span><i class="ion-navicon"></i></span>
-        </button>
-        <div class="collapse navbar-collapse" id="probootstrap-navbar">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="#section-home">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#section-story">Story</a></li>
-            <li class="nav-item"><a class="nav-link" href="#section-programs">Programs</a></li>
-            <li class="nav-item"><a class="nav-link" href="#section-team">Team</a></li>
-            <li class="nav-item"><a class="nav-link" href="#section-faq">FAQ</a></li>
-            <li class="nav-item cta-btn ml-xl-2 ml-lg-2 ml-md-0 ml-sm-0 ml-0"><a class="nav-link" href="#section-contact" target="_blank"><span class="pb_rounded-4 px-4">Contact Us</span></a></li>
+  <title>CS+Social Good</title>
+  <meta name="description"
+    content="A student organization at Stanford dedicated to the intersection of technology and social impact.">
+  <meta name="keywords"
+    content="CS4Good, technology, justice, social impact, CS+Social Good, computer science, society">
+
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400|Work+Sans:300,400" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+  <!-- loader -->
+  <nav class="navbar navbar-expand-lg navbar-dark pb_navbar pb_scrolled-light" id="pb-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img id="white-logo" src="<%=require('./images/logo_whitescale.png')%>" width="auto" height="30"
+          alt="White version of CS+Social Good logo">
+        <img id="dark-logo" src="<%=require('./images/logo.png')%>" width="auto" height="30"
+          alt="Color version of CS+Social Good logo" style="display:none">
+      </a>
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#probootstrap-navbar"
+        aria-controls="probootstrap-navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="ion-navicon"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="probootstrap-navbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#section-home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#section-story">Story</a></li>
+          <li class="nav-item"><a class="nav-link" href="#section-programs">Programs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#section-team">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#section-faq">FAQ</a></li>
+          <li class="nav-item cta-btn ml-xl-2 ml-lg-2 ml-md-0 ml-sm-0 ml-0"><a class="nav-link" href="#section-contact"
+              target="_blank"><span class="pb_rounded-4 px-4">Contact Us</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END nav -->
+
+  <section class="pb_cover_v3 overflow-hidden cover-bg-indigo cover-bg-opacity text-left cssg_gradient pb_slant-light"
+    id="section-home">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-6">
+          <h2 class="heading mb-3">Stanford CS+Social Good</h2>
+          <div class="sub-heading">
+            <p class="mb-4">An organization of technologists, designers, and thinkers passionate about maximizing the
+              benefits of technology and mitigating its harms.</p>
+            <!--                            <p> <a href=https://solo.stanford.edu/opportunities/cssocial-good-spring-and-summer-fellowship-2021 target="_blank" id="apply-link"> 🆕 Apply for a CS+SG fellowship today!</a> </p>-->
+            <!--  <p> <a href="http://bit.ly/cssg2223" target="_blank"
+                              id="apply-link"> 🆕 Apply to join the CS+Social
+                              Good Team! </a> </p> -->
+            <p class="mb-4"><a href="https://bit.ly/38viSk7" target="_blank" id="past-work">Look at Our Past Work</a>
+            </p>
+            <p class="mb-5">
+              <a class="btn btn-lg pb_outline-light smoothscroll" href="https://medium.com/@cs4good" target="_blank"><i
+                  class="fa fa-medium"></i></span></a>
+              <a class="btn btn-lg pb_outline-light smoothscroll" href="https://www.facebook.com/cs4good/"
+                target="_blank"><i class="fa fa-facebook"></i></span></a>
+              <a class="btn btn-lg pb_outline-light smoothscroll"
+                href="https://mailman.stanford.edu/mailman/listinfo/cs-for-social-good" target="_blank"><i
+                  class="fa fa-envelope"></i></span></a>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-5 relative align-self-center">
+          <form action="#" class="bg-white rounded pb_form_v1">
+            <h2 class="mb-4 mt-0 text-center">Upcoming Events</h2>
+            <div id="cal-list" class="events-list pt-2 pb-3">
+            </div>
+            <div class="form-group">
+              <a href="https://calendar.google.com/calendar/embed?src=16gvb0e5ne6ngs1vg29uib18l0%40group.calendar.google.com&ctz=America/Los_Angeles"
+                target="_blank" class="btn btn-cssg-meadow btn-lg btn-block pb_btn-pill btn-shadow-meadow"><i
+                  class="fa fa-calendar"></i> Events GCal</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END section -->
+
+  <section class="pb_section bg-light pb_slant-white pb_pb-250" id="section-story">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <iframe width="80%" height="500" src="https://www.youtube.com/embed/hGzRE0C0rY4" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+        <div class="col-md-8 text-center mb-5">
+          <h5 class="text-uppercase pb_font-15 mt-5 mb-2 pb_color-dark-opacity-3 pb_letter-spacing-2"><strong>Our
+              Story</strong></h5>
+          <h2>Who We Are</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md- col-sm-6">
+          <div class="media d-block pb_feature-v1 text-left">
+            <div class="pb_icon"><i class="ion-ios-rewind-outline pb_icon-gradient"></i></div>
+            <div class="media-body">
+              <h5 class="mt-0 mb-3 heading">History</h5>
+              <p class="text-sans-serif">CS+Social Good grew out of the need for a unified and coordinated effort at
+                Stanford to organize and connect students using technology to take action and collaborate on the world’s
+                most pressing problems.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md- col-sm-6">
+          <div class="media d-block pb_feature-v1 text-left">
+            <div class="pb_icon"><i class="ion-ios-play-outline pb_icon-gradient"></i></div>
+            <div class="media-body">
+              <h5 class="mt-0 mb-3 heading">Mission</h5>
+              <p class="text-sans-serif">Our mission is to empower members of our community to leverage technology for
+                social good by inspiring action, facilitating collaboration, and forging pathways towards change.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md- col-sm-6">
+          <div class="media d-block pb_feature-v1 text-left">
+            <div class="pb_icon"><i class="ion-ios-fastforward-outline pb_icon-gradient"></i></div>
+            <div class="media-body">
+              <h5 class="mt-0 mb-3 heading">Vision</h5>
+              <p class="text-sans-serif">We envision a world where technology is understood beyond the hype and applied
+                thoughtfully as a tool that can help us solve some of our biggest problems.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END section -->
+
+  <section class="pb_section pb_slant-light" id="section-programs">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-5">
+          <!-- TODO: figure out how to make an actual gradient on this image instead of putting gradient in image-->
+          <img id="studio-pic" alt="Picture of female student presenting to audience in front of large screen"
+            class="img-fluid">
+        </div>
+        <div class="col-lg-8 pl-md-5 pl-sm-0">
+          <div class="row">
+            <div class="col">
+              <h2>Curricular Learning</h2>
+              <p class="pb_font-20">CS+Social Good offers several courses through the CS Department that address a wide
+                variety of topics in the tech for good space.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg">
+
+              <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                <div class="pb_icon d-flex mr-3 align-self-start pb_w-15"><i
+                    class="ion-ios-cog-outline pb_icon-gradient"></i></div>
+                <div class="media-body">
+                  <h3 class="mt-2 mb-2 heading">Studio</h3>
+                  <p class="text-sans-serif pb_font-16">Student teams partner with nonprofits and social ventures to
+                    build impactful technical projects over 2 quarters.</p>
+                  <p class="text-sans-serif pb_font-16"> <a href="http://web.stanford.edu/class/cs51/" target="_blank">
+                      <u>Class Website</u> </a> </p>
+                </div>
+              </div>
+
+              <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                <div class="pb_icon d-flex mr-3 align-self-start pb_w-15"><i
+                    class="ion-ios-chatbubble-outline pb_icon-gradient"></i></div>
+                <div class="media-body">
+                  <h3 class="mt-2 mb-2 heading">Discussions</h3>
+                  <p class="text-sans-serif pb_font-16">A series of diverse speakers ranging from nonprofit founders to
+                    ethics researchers, with unique discussions in smaller groups.</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg">
+
+              <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                <div class="pb_icon d-flex mr-3 align-self-start pb_w-15"><i
+                    class="ion-ios-analytics-outline pb_icon-gradient"></i></div>
+                <div class="media-body">
+                  <h3 class="mt-2 mb-2 heading">AI+Social Good</h3>
+                  <p class="text-sans-serif pb_font-16">Students learn about and apply cutting-edge artificial
+                    intelligence techniques to real-world social good space.</p>
+                  <p class="text-sans-serif pb_font-16"> <a href="https://web.stanford.edu/class/cs21si/"
+                      target="_blank"> <u>Class Website</u> </a> <a href="https://stanfordai4good.github.io/"
+                      target="_blank"> <u>Summer Workshop</u> </a></p>
+                </div>
+              </div>
+
+              <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                <div class="pb_icon d-flex mr-3 align-self-start pb_w-15"><i
+                    class="ion-ios-reload  pb_icon-gradient"></i></div>
+                <div class="media-body">
+                  <h3 class="mt-2 mb-2 heading">CS 106S</h3>
+                  <p class="text-sans-serif pb_font-16">A 1-unit lab for the introductory CS sequence that applies
+                    concepts learned in class to topics in the tech for good space.</p>
+                  <p class="text-sans-serif pb_font-16"> <a href="http://web.stanford.edu/class/cs106s/"
+                      target="_blank"> <u>Class Website</u> </a> </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END section -->
+
+  <section class="pb_section bg-light pb_slant-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 order-2">
+          <img id="social-pic"
+            alt="Three smiling students standing on grass holding up a large frame that says CS+Social Good"
+            class="img-fluid">
+        </div>
+        <div class="col-lg-8 pr-md-5 pr-sm-0 order-1  mb-5">
+          <div class="row">
+            <div class="col">
+              <h2>Extracurricular Programs</h2>
+              <p class="pb_font-20">CS+Social Good also engages with our community in ways that go beyond the classroom.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg">
+
+              <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                <div class="pb_icon d-flex mr-3 align-self-start pb_w-15"><i
+                    class="ion-ios-bookmarks-outline pb_icon-gradient"></i></div>
+                <div class="media-body">
+                  <h3 class="mt-2 mb-2 heading">Education Outreach</h3>
+                  <p class="text-sans-serif pb_font-16">Our team is creating tech for good, post-AP exam project
+                    curricula for high school AP CS classes across the country.</p>
+                  <p class="text-sans-serif pb_font-16"> <a href="https://teachcs4good.org/" target="_blank">
+                      <u>Education Material</u> </a> </p>
+                </div>
+              </div>
+
+              <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                <div class="pb_icon d-flex mr-3 align-self-start pb_w-15"><i
+                    class="ion-ios-color-filter-outline pb_icon-gradient"></i></div>
+                <div class="media-body">
+                  <h3 class="mt-2 mb-2 heading">Community</h3>
+                  <p class="text-sans-serif pb_font-16">From quarterly mixers to speaker events, we create spaces for
+                    students passionate about technology and impact to connect.</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg">
+
+              <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                <div class="pb_icon d-flex mr-3 align-self-start pb_w-15"><i
+                    class="ion-ios-paperplane-outline pb_icon-gradient"></i></div>
+                <div class="media-body">
+                  <h3 class="mt-2 mb-2 heading">Fellowships</h3>
+                  <p class="text-sans-serif pb_font-16">In partnership with the Haas Center, we provide fellows stipends
+                    to work on social ventures all across the world.</p>
+                  <p class="text-sans-serif pb_font-16"> <u>Applications will open be posted here when open!</u> </a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                <div class="pb_icon d-flex mr-3 align-self-start pb_w-15"><i
+                    class="ion-ios-flask-outline pb_icon-gradient"></i></div>
+                <div class="media-body">
+                  <h3 class="mt-2 mb-2 heading">Impact Lab</h3>
+                  <p class="text-sans-serif pb_font-16">We build a community of undergraduates conducting
+                    socially-impactful
+                    research by connecting students to 2-quarter projects.
+                    <u>Check back next fall for our application.</u>
+                  </p>
+                  <p class="text-sans-serif pb_font-16"><a
+                      href="https://docs.google.com/document/d/10T7OMhIo97n0nooGJjHjf6MJyB6YLT5FnQAcEIjb19g/edit?usp=sharing"
+                      target="_blank"><u>This
+                        year's labs</u></a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END section -->
+
+  <section class="pb_section pb_slant-light pb_pb-220">
+    <div class="container">
+      <div class="row justify-content-center mb-1">
+        <div class="col-md-6 text-center mb-5">
+          <h5 class="text-uppercase pb_font-15 mb-2 pb_color-dark-opacity-3 pb_letter-spacing-2">
+            <strong>Reviews</strong>
+          </h5>
+          <h2>Testimonials</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <div class="media d-block text-center testimonial_v1 pb_quote_v2
+              mb-5">
+            <div class="media-body">
+              <div class="quote-left">&ldquo;</div>
+              <div class="quote-right">&rdquo;</div>
+              <blockquote class="mb-5">Last spring, I was debating between the CS+Social Good Fellowship and a big tech
+                company program. I have absolutely no regrets about taking the fellowship: I got to see the direct
+                impact of my work and I got to know a group of incredible, inspiring people.</blockquote>
+              <h3 class="heading">Claire Huang</h3>
+              <span class="subheading">CS+Social Good Summer Fellow</span>
+            </div>
+          </div>
+          <!-- END sync_v1 -->
+        </div>
+      </div>
+
+      <div class="row justify-content-center mb-5">
+        <blockquote class="instagram-media" data-instgrm-captioned
+          data-instgrm-permalink="https://www.instagram.com/p/Ci3PlREN__V/?utm_source=ig_embed&amp;utm_campaign=loading"
+          data-instgrm-version="14"
+          style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+          <div style="padding:16px;"> <a
+              href="https://www.instagram.com/p/Ci3PlREN__V/?utm_source=ig_embed&amp;utm_campaign=loading"
+              style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+              target="_blank">
+              <div style=" display: flex; flex-direction: row; align-items: center;">
+                <div
+                  style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                </div>
+                <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                  <div
+                    style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                  </div>
+                  <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                  </div>
+                </div>
+              </div>
+              <div style="padding: 19% 0;"></div>
+              <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px"
+                  viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg"
+                  xmlns:xlink="https://www.w3.org/1999/xlink">
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                      <g>
+                        <path
+                          d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                        </path>
+                      </g>
+                    </g>
+                  </g>
+                </svg></div>
+              <div style="padding-top: 8px;">
+                <div
+                  style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                  View this post on Instagram</div>
+              </div>
+              <div style="padding: 12.5% 0;"></div>
+              <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                <div>
+                  <div
+                    style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                  </div>
+                  <div
+                    style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                  </div>
+                  <div
+                    style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                  </div>
+                </div>
+                <div style="margin-left: 8px;">
+                  <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                  </div>
+                  <div
+                    style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                  </div>
+                </div>
+                <div style="margin-left: auto;">
+                  <div
+                    style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                  </div>
+                  <div
+                    style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                  </div>
+                  <div
+                    style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                  </div>
+                </div>
+              </div>
+              <div
+                style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                <div
+                  style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                </div>
+                <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                </div>
+              </div>
+            </a>
+            <p
+              style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+              <a href="https://www.instagram.com/p/Ci3PlREN__V/?utm_source=ig_embed&amp;utm_campaign=loading"
+                style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                target="_blank">A post shared by Cardinal Service (@cardinalservice)</a>
+            </p>
+          </div>
+        </blockquote>
+        <script async src="//www.instagram.com/embed.js"></script>
+      </div>
+      <div class="row justify-content-center mb-1">
+        <div class="col-md-6 text-center mb-1">
+          <div class="media d-block text-center testimonial_v1 pb_quote_v2 mb-1">
+            <div class="media-body">
+              <h3 class="heading">Sasankh Munukutla</h3>
+              <span class="subheading">Hear from our former CS+Social Good
+                President!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- END section -->
+
+  <section class="pb_section bg-light pb_slant-white" id="section-team">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-6 text-center mb-5">
+          <h5 class="text-uppercase pb_font-15 mb-2 pb_color-dark-opacity-3 pb_letter-spacing-2"><strong>Team</strong>
+          </h5>
+          <h2>Executive Board</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-3">
+          <div class="pb_pricing_v1 p-5 border text-center bg-white">
+            <h4 class="mb-3"></br>President</h4>
+            <img class="img-fluid rounded-circle" src="<%=require('./images/square23/ashna23.png')%>"
+              alt="Photograph of Ashna Khetan">
+            <p class="pb_font-15 mt-3 mb-0">Ashna Khetan</p>
+            <p class="pb_font-15"><a href="mailto:ashnak@stanford.edu"><i class="fa
+                              fa-envelope"></i></a> | <a href="https://www.linkedin.com/in/ashna-khetan/"
+                target="_blank"><i class="fa fa-linkedin"></i></a></p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="pb_pricing_v1 p-5 border text-center bg-white">
+            <h4 class="mb-3">Vice President & Fellowships</h4>
+            <img class="img-fluid rounded-circle" src="<%=require('./images/square23/june23.png')%>"
+              alt="Photograph of June Lee">
+            <p class="pb_font-15 mt-3 mb-0">June Lee</p>
+            <p class="pb_font-15"><a href="mailto:junelee1@stanford.edu"><i class="fa fa-envelope"></i></a> | <a
+                href="https://www.linkedin.com/in/junelee619/" target="_blank"><i class="fa fa-linkedin"></i></a></p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="pb_pricing_v1 p-5 border text-center bg-white">
+            <h4 class="mb-3">Financial Officer</h4>
+            <img class="img-fluid rounded-circle" src="<%=require('./images/logo-square.png')%>" alt="Photograph of Hayden Thompson">
+            <p class="pb_font-15 mt-3 mb-0">Hayden Thompson</p>
+            <!-- <p class="pb_font-15"><a href="mailto:gdmagana@stanford.edu"><i class="fa fa-envelope"></i></a> | <a
+                href="https://www.linkedin.com/in/senem/" target="_blank"><i class="fa fa-linkedin"></i></a></p> -->
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="pb_pricing_v1 p-5 border text-center bg-white">
+            <h4 class="mb-3"></br>Social Chair & Education Outreach</h4>
+            <img class="img-fluid rounded-circle" src="<%=require('./images/square23/winson23.png')%>"
+              alt="Photograph of Winson Cheng">
+            <p class="pb_font-15 mt-3 mb-0">Winson Cheng</p>
+            <p class="pb_font-15"><a href="mailto:winsonc@stanford.edu"><i class="fa
+                              fa-envelope"></i></a> | <a href="https://www.linkedin.com/in/chengwinson/"
+                target="_blank"><i class="fa fa-linkedin"></i></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-3">
+          <div class="pb_pricing_v1 p-5 border text-center bg-white">
+            <h4 class="mb-3">AI+Social Good</h4>
+            <img class="img-fluid rounded-circle" src="<%=require('./images/square23/adam23.png')%>" alt="Photograph of Adam
+              Sun">
+            <p class="pb_font-15 mt-3 mb-0">Adam Sun</p>
+            <p class="pb_font-15"><a href="mailto:adsun@stanford.edu"><i class="fa fa-envelope"></i></a> | <a
+                href="https://adamsunn.github.io/" target="_blank"><i class="fa fa-linkedin"></i></a></p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="pb_pricing_v1 p-5 border text-center bg-white">
+            <h4 class="mb-3">AI+Social Good</h4>
+            <img class="img-fluid rounded-circle" src="<%=require('./images/square23/mona23.png')%>"
+              alt="Photograph of Mona Anvari">
+            <p class="pb_font-15 mt-3 mb-0">Mona Anvari</p>
+            <p class="pb_font-15"><a href="mailto:monaavr@stanford.edu"><i class="fa fa-envelope"></i></a> | <a
+                href="https://www.linkedin.com/in/mona-anvari-0b92aa97/" target="_blank"><i
+                  class="fa fa-linkedin"></i></a></p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="pb_pricing_v1 p-5 border text-center bg-white">
+            <h4 class="mb-3"></br>Discussions</h4>
+            <img class="img-fluid rounded-circle" src="<%=require('./images/square23/deepan23.png')%>"
+              alt="Photograph of Deepan Shah">
+            <p class="pb_font-15 mt-3 mb-0">Deepan Shah</p>
+            <p class="pb_font-15"><a href="mailto:deepans@stanford.edu"><i class="fa fa-envelope"></i></a> | <a
+                href="https://www.linkedin.com/in/deepan-shah/" target="_blank"><i class="fa fa-linkedin"></i></a></p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="pb_pricing_v1 p-5 border text-center bg-white">
+            <h4 class="mb-3"></br>Discussions</h4>
+            <img class="img-fluid rounded-circle" src="<%=require('./images/square23/steve23.png')%>"
+              alt="Photograph of Steve Dou">
+            <p class="pb_font-15 mt-3 mb-0">Steve Dou</p>
+            <p class="pb_font-15"><a href="mailto:stevedou@stanford.edu"><i class="fa fa-envelope"></i></a> | <a
+                href="https://www.linkedin.com/in/steve-dou" target="_blank"><i class="fa fa-linkedin"></i></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-3">
+          <div class="pb_pricing_v1 p-5 border text-center bg-white">
+            <h4 class="mb-3"></br>Fellowships</h4>
+            <img class="img-fluid rounded-circle" src="<%=require('./images/square23/sherry23.png')%>" alt="Photograph of
+              Sherry Xie">
+            <p class="pb_font-15 mt-3 mb-0">Sherry Xie</p>
+            <p class="pb_font-15"><a href="mailto:ycxie@stanford.edu"><i class="fa fa-envelope"></i></a> | <a
+                href="https://www.linkedin.com/in/yichen-sherry-xie/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="pb_pricing_v1 p-5 border text-center bg-white">
+            <h4 class="mb-3"></br>CS106S</h4>
+            <img class="img-fluid rounded-circle" src="<%=require('./images/square23/ben23.png')%>"
+              alt="Photograph of Ben Yan">
+            <p class="pb_font-15 mt-3 mb-0">Ben Yan</p>
+            <p class="pb_font-15"><a href="mailto:bbyan@stanford.edu"><i class="fa fa-envelope"></i></a> | <a
+                href="https://www.linkedin.com/in/benjaminbyan/" target="_blank"><i class="fa fa-linkedin"></i></a></p>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="pb_pricing_v1 p-5 border text-center bg-white">
+            <h4 class="mb-3">Design &amp; Marketing</h4>
+            <img class="img-fluid rounded-circle" src="<%=require('./images/square23/sarah23.png')%>"
+              alt="Photograph of Sarah Dong">
+            <p class="pb_font-15 mt-3 mb-0">Sarah Dong</p>
+            <p class="pb_font-15"><a href="mailto:sarahjd@stanford.edu"><i class="fa fa-envelope"></i></a> | <a
+                href="www.linkedin.com/in/sarah-dong-0882641a4" target="_blank"><i class="fa fa-linkedin"></i></a></p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="pb_pricing_v1 p-5 border text-center bg-white">
+            <h4 class="mb-3">Design &amp; Marketing</h4>
+            <img class="img-fluid rounded-circle" src="<%=require('./images/square23/dalynn23.png')%>"
+              alt="Photograph of Dalynn Miller">
+            <p class="pb_font-15 mt-3 mb-0">Dalynn Miller</p>
+            <p class="pb_font-15"><a href="mailto:dalynn@stanford.edu"><i class="fa fa-envelope"></i></a> | <a
+                href="https://www.linkedin.com/in/dalynn-miller-849266179" target="_blank"><i
+                  class="fa fa-linkedin"></i></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-3">
+          <div class="pb_pricing_v1 p-5 border text-center bg-white">
+            <h4 class="mb-3"></br>Studio</h4>
+            <img class="img-fluid rounded-circle" src="<%=require('./images/square23/anusheh23.png')%>"
+              alt="Photograph of Anusheh Chaudry">
+            <p class="pb_font-15 mt-3 mb-0">Anusheh Chaudry</p>
+            <p class="pb_font-15"><a href="mailto:anusheh@stanford.edu"><i class="fa fa-envelope"></i></a> | <a
+                href="https://www.linkedin.com/in/anushehchaudry" target="_blank"><i class="fa fa-linkedin"></i></a></p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="pb_pricing_v1 p-5 border text-center bg-white">
+            <h4 class="mb-3"></br>Studio</h4>
+            <img class="img-fluid rounded-circle" src="<%=require('./images/logo-square.png')%>"
+              alt="Photograph of Sarah Barragan">
+            <p class="pb_font-15 mt-3 mb-0">Sarah Barragan</p>
+            <p class="pb_font-15"><a href="mailto:sabarrag@stanford.edu"><i class="fa fa-envelope"></i></a> | <a
+                href="https://www.linkedin.com/in/sarah-barragan-980b6b228/" target="_blank"><i
+                  class="fa fa-linkedin"></i></a></p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="pb_pricing_v1 p-5 border text-center bg-white">
+            <h4 class="mb-3"></br>Impact Lab</h4>
+            <img class="img-fluid rounded-circle" src="<%=require('./images/square23/annie23.png')%>"
+              alt="Photograph of Anna Yang">
+            <p class="pb_font-15 mt-3 mb-0">Annie Lee</p>
+            <p class="pb_font-15"><a href="mailto:annieee@stanford.edu"><i class="fa fa-envelope"></i></a> | <a
+                href="http://linkedin.com/in/annie-lee-53a898280" target="_blank"><i class="fa fa-linkedin"></i></a></p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="pb_pricing_v1 p-5 border text-center bg-white">
+            <h4 class="mb-3"></br>Webmaster</h4>
+            <img class="img-fluid rounded-circle" src="<%=require('./images/square23/josh23.png')%>"
+              alt="Photograph of Josh Delgadillo">
+            <p class="pb_font-15 mt-3 mb-0">Josh Delgadillo</p>
+            <p class="pb_font-15"><a href="mailto:joshdelg@stanford.edu"><i class="fa fa-envelope"></i></a> | <a
+                href="https://www.linkedin.com/in/joshdelg/" target="_blank"><i class="fa fa-linkedin"></i></a></p>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- ENDs ection -->
+
+  <section class="pb_section pb_slant-white" id="section-faq">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-6 text-center mb-5">
+          <h5 class="text-uppercase pb_font-15 mb-2 pb_color-dark-opacity-3 pb_letter-spacing-2"><strong>FAQ</strong>
+          </h5>
+          <h2>Frequently Asked Questions</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <div id="pb_faq" class="pb_accordion" data-children=".item">
+            <div class="item">
+              <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq1" aria-expanded="true"
+                aria-controls="pb_faq1" class="pb_font-22 py-4">When was CS+Social Good founded?</a>
+              <div id="pb_faq1" class="collapse show" role="tabpanel">
+                <div class="py-3">
+                  <p>CS+Social Good was founded in 2015 by a team of students led by Lawrence Lin Murata. Our founding
+                    team includes Edward Wang, Gloria Chua, Katherine Liu, Manu Chopra, Neil Chaudhari, Ngoc Bui, Priya
+                    Ganesan, SunMi Lee, Vicki Niu, and Vinamrata Singal.</p>
+                  <p>As of 2018, all of our founding members have graduated, but our work today continues to build off
+                    of their foundational vision. (We <i class="ion-ios-heart pb_icon-gradient"></i> our alumni!)</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq2" aria-expanded="false"
+                aria-controls="pb_faq2" class="pb_font-22 py-4">How is CS+Social Good structured?</a>
+              <div id="pb_faq2" class="collapse" role="tabpanel">
+                <div class="py-3">
+                  <p>CS+Social Good espouses a flat leadership structure. While our President, Vice President, and
+                    Financial Officer oversee the workings of the entire organization, our specific initiatives are run
+                    by separate subteams. Our executive board is composed of our President, Vice President, Financial
+                    Officer, and each of the subteam heads.</p>
+                  <p>Each subteam is led by subteam head(s), and is composed of 3-5 subteam members, although our
+                    classes usually have a larger teaching staff. We encourage our members to start their own subteam if
+                    they have an idea for a new initiative that falls somewhere within the tech for good space.</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq3" aria-expanded="false"
+                aria-controls="pb_faq3" class="pb_font-22 py-4">How do I get involved in CS+Social Good?</a>
+              <div id="pb_faq3" class="collapse" role="tabpanel">
+                <div class="py-3">
+                  <p>There are a variety of ways to get involved in CS+Social Good. You can enroll in our classes (which
+                    may be application-based, depending on the class), attend our speaker and mixer events, sign up for
+                    our newsletter, and apply for one of our fellowships.</p>
+                  <p>If you'd like to be part of our core team, we accept applications to join our team every fall.</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq4" aria-expanded="false"
+                aria-controls="pb_faq4" class="pb_font-22 py-4">Do I have to know how to code to contribute?</a>
+              <div id="pb_faq4" class="collapse" role="tabpanel">
+                <div class="py-3">
+                  <p>Absolutely not! Tech affects everyone, and we need a diverse set of perspectives and skills to
+                    create effective, inclusive change.</p>
+                  <p>More than any technical skill, the traits we care most about include empathy, humility, motivation,
+                    kindness, and a willingness to learn.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq5" aria-expanded="false"
+                aria-controls="pb_faq5" class="pb_font-22 py-4">Do I have to attend Stanford to join the community?</a>
+              <div id="pb_faq5" class="collapse" role="tabpanel">
+                <div class="py-3">
+                  <p>You don't have to be at Stanford to engage with CS+Social Good! We maintain an <a
+                      href="https://www.facebook.com/groups/cs4good/" target="_blank">active Facebook group</a> of over
+                    2,000 members from all across the world.</p>
+                  <p>In addition, anyone can sign up for our weekly newsletter via <a
+                      href="https://mailman.stanford.edu/mailman/listinfo/cs-for-social-good" target="_blank">Stanford
+                      Mailman</a>. Though most of the content is targeted towards Stanford students, we also feature
+                    readings and opportunities for the wider community.</p>
+                  <p>If you'd like to start an organization like CS+Social Good at your own school, check out <a
+                      href="https://techshift.org/" target="_blank">TechShift</a>, a national alliance of tech for good
+                    organizations on college campuses! We're a proud TechShift member org, and they can help you with
+                    resources and mentorship to start your own tech for good organization.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq6" aria-expanded="false"
+                aria-controls="pb_faq6" class="pb_font-22 py-4">My organization wants to work together. How do we get in
+                touch?</a>
+              <div id="pb_faq6" class="collapse" role="tabpanel">
+                <div class="py-3">
+                  <p>To publicize an event or opportunity to our mailing list, please send an email with the relevant
+                    information to <a
+                      href="mailto:cs-for-social-good@lists.stanford.edu">cs-for-social-good@lists.stanford.edu</a> and
+                    we will put it in our next weekly newsletter. If the opportunity is time-sensitive, please forward
+                    it to us at least a week in advance.</p>
+                  <p>If you would like to contact us for any other reason, please email <a
+                      href="mailto:stanfordcs4good@gmail.com">stanfordcs4good@gmail.com</a>. If you have specific
+                    questions about a particular subteam, please feel free to email the relevant board member (see Team
+                    section).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb_xl_py_cover overflow-hidden pb_slant-light pb_gradient_v1 cover-bg-opacity-8" id="section-contact">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-5 justify-content-center">
+          <h2 class="heading mb-5 pb_font-40">We'd love to hear what you think.</h2>
+          <div class="sub-heading">
+            <p class="mb-4">Feel free to drop us a line using this form. Whether it's an invitation to collaborate,
+              feedback on our programs, or questions about our philosophy, we want to hear from you.</p>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <form name="contact-form" method="post" data-netlify="true" netlify-honeypot="bot-field"
+            accept-charset="UTF-8" class="bg-white rounded pb_form_v1">
+            <input hidden name="bot-field" />
+            <h2 class="mb-4 mt-0 text-center">Contact Form</h2>
+            <div class="form-group">
+              <input type="text" class="form-control py-3 reverse" placeholder="Name" name="name">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control py-3 reverse" placeholder="Email" name="email">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control py-3 reverse" rows="4" placeholder="Type your message here..."
+                name="message"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" class="btn btn-cssg-meadow btn-lg btn-block pb_btn-pill btn-shadow-meadow"
+                value="Send Message">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END section -->
+
+  <footer class="pb_footer bg-light" role="contentinfo">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="https://www.facebook.com/cs4good/" target="_blank" class="p-2"><i
+                  class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="https://twitter.com/cs4good" target="_blank" class="p-2"><i
+                  class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.linkedin.com/company/cs-social-good/" target="_blank"
+                class="p-2"><i class="fa fa-linkedin"></i></a></li>
+            <li class="list-inline-item"><a href="https://medium.com/cs-social-good" target="_blank" class="p-2"><i
+                  class="fa fa-medium"></i></a></li>
+            <li class="list-inline-item"><a href="mailto:stanfordcs4good@gmail.com" class="p-2"><i
+                  class="fa fa-envelope"></i></a></li>
           </ul>
         </div>
       </div>
-    </nav>
-    <!-- END nav -->
-
-    <section class="pb_cover_v3 overflow-hidden cover-bg-indigo cover-bg-opacity text-left cssg_gradient pb_slant-light" id="section-home">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-md-6">
-            <h2 class="heading mb-3">Stanford CS+Social Good</h2>
-            <div class="sub-heading">
-              <p class="mb-4">An organization of technologists, designers, and thinkers passionate about maximizing the benefits of technology and mitigating its harms.</p>
-<!--                            <p> <a href=https://solo.stanford.edu/opportunities/cssocial-good-spring-and-summer-fellowship-2021 target="_blank" id="apply-link"> 🆕 Apply for a CS+SG fellowship today!</a> </p>-->
-                          <!--  <p> <a href="http://bit.ly/cssg2223" target="_blank"
-                              id="apply-link"> 🆕 Apply to join the CS+Social
-                              Good Team! </a> </p> -->
-                            <p class="mb-4"><a href="https://bit.ly/38viSk7" target="_blank" id="past-work">Look at Our Past Work</a></p>
-							<p class="mb-5">
-                  <a class="btn btn-lg pb_outline-light smoothscroll" href="https://medium.com/@cs4good" target="_blank"><i class="fa fa-medium"></i></span></a>
-                  <a class="btn btn-lg pb_outline-light smoothscroll" href="https://www.facebook.com/cs4good/" target="_blank"><i class="fa fa-facebook"></i></span></a>
-                  <a class="btn btn-lg pb_outline-light smoothscroll" href="https://mailman.stanford.edu/mailman/listinfo/cs-for-social-good" target="_blank"><i class="fa fa-envelope"></i></span></a>
-                </p>
-            </div>
-          </div>
-          <div class="col-md-1">
-          </div>
-          <div class="col-md-5 relative align-self-center">
-            <form action="#" class="bg-white rounded pb_form_v1">
-              <h2 class="mb-4 mt-0 text-center">Upcoming Events</h2>
-              <div id="cal-list" class="events-list pt-2 pb-3">
-              </div>
-              <div class="form-group">
-                <a href="https://calendar.google.com/calendar/embed?src=16gvb0e5ne6ngs1vg29uib18l0%40group.calendar.google.com&ctz=America/Los_Angeles" target="_blank" class="btn btn-cssg-meadow btn-lg btn-block pb_btn-pill btn-shadow-meadow"><i class="fa fa-calendar"></i> Events GCal</a>
-              </div>
-            </form>
-          </div>
+      <div class="row">
+        <div class="col text-center">
+          <p class="pb_font-14">&copy; 2022 CS+Social Good.</p>
         </div>
       </div>
-    </section>
-    <!-- END section -->
+    </div>
+  </footer>
+  <div id="pb_loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#1d82ff" />
+    </svg></div>
+</body>
 
-    <section class="pb_section bg-light pb_slant-white pb_pb-250" id="section-story">
-      <div class="container">
-        <div class="row justify-content-center mb-5">
-          <iframe width="80%" height="500" src="https://www.youtube.com/embed/hGzRE0C0rY4"
-                  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-          </iframe>
-          <div class="col-md-8 text-center mb-5">
-            <h5 class="text-uppercase pb_font-15 mt-5 mb-2 pb_color-dark-opacity-3 pb_letter-spacing-2"><strong>Our Story</strong></h5>
-            <h2>Who We Are</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md- col-sm-6">
-            <div class="media d-block pb_feature-v1 text-left">
-              <div class="pb_icon"><i class="ion-ios-rewind-outline pb_icon-gradient"></i></div>
-              <div class="media-body">
-                <h5 class="mt-0 mb-3 heading">History</h5>
-                <p class="text-sans-serif">CS+Social Good grew out of the need for a unified and coordinated effort at Stanford to organize and connect students using technology to take action and collaborate on the world’s most pressing problems.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md- col-sm-6">
-            <div class="media d-block pb_feature-v1 text-left">
-              <div class="pb_icon"><i class="ion-ios-play-outline pb_icon-gradient"></i></div>
-              <div class="media-body">
-                <h5 class="mt-0 mb-3 heading">Mission</h5>
-                <p class="text-sans-serif">Our mission is to empower members of our community to leverage technology for social good by inspiring action, facilitating collaboration, and forging pathways towards change.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md- col-sm-6">
-            <div class="media d-block pb_feature-v1 text-left">
-              <div class="pb_icon"><i class="ion-ios-fastforward-outline pb_icon-gradient"></i></div>
-              <div class="media-body">
-                <h5 class="mt-0 mb-3 heading">Vision</h5>
-                <p class="text-sans-serif">We envision a world where technology is understood beyond the hype and applied thoughtfully as a tool that can help us solve some of our biggest problems.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END section -->
-
-    <section class="pb_section pb_slant-light"  id="section-programs">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 mb-5">
-            <!-- TODO: figure out how to make an actual gradient on this image instead of putting gradient in image-->
-            <img id="studio-pic" alt="Picture of female student presenting to audience in front of large screen" class="img-fluid">
-          </div>
-          <div class="col-lg-8 pl-md-5 pl-sm-0">
-            <div class="row">
-              <div class="col">
-                <h2>Curricular Learning</h2>
-                <p class="pb_font-20">CS+Social Good offers several courses through the CS Department that address a wide variety of topics in the tech for good space.</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg">
-
-                <div class="media pb_feature-v2 text-left mb-1 mt-5">
-                  <div class="pb_icon d-flex mr-3 align-self-start pb_w-15"><i class="ion-ios-cog-outline pb_icon-gradient"></i></div>
-                  <div class="media-body">
-                    <h3 class="mt-2 mb-2 heading">Studio</h3>
-                    <p class="text-sans-serif pb_font-16">Student teams partner with nonprofits and social ventures to build impactful technical projects over 2 quarters.</p>
-                    <p class="text-sans-serif pb_font-16"> <a href="http://web.stanford.edu/class/cs51/" target="_blank"> <u>Class Website</u> </a> </p>
-                  </div>
-                </div>
-
-                <div class="media pb_feature-v2 text-left mb-1 mt-5">
-                  <div class="pb_icon d-flex mr-3 align-self-start pb_w-15"><i class="ion-ios-chatbubble-outline pb_icon-gradient"></i></div>
-                  <div class="media-body">
-                    <h3 class="mt-2 mb-2 heading">Discussions</h3>
-                    <p class="text-sans-serif pb_font-16">A series of diverse speakers ranging from nonprofit founders to ethics researchers, with unique discussions in smaller groups.</p>
-                  </div>
-                </div>
-
-              </div>
-              <div class="col-lg">
-
-                <div class="media pb_feature-v2 text-left mb-1 mt-5">
-                  <div class="pb_icon d-flex mr-3 align-self-start pb_w-15"><i class="ion-ios-analytics-outline pb_icon-gradient"></i></div>
-                  <div class="media-body">
-                    <h3 class="mt-2 mb-2 heading">AI+Social Good</h3>
-                    <p class="text-sans-serif pb_font-16">Students learn about and apply cutting-edge artificial intelligence techniques to real-world social good space.</p>
-                    <p class="text-sans-serif pb_font-16"> <a href="https://web.stanford.edu/class/cs21si/" target="_blank"> <u>Class Website</u> </a> <a href="https://stanfordai4good.github.io/" target="_blank"> <u>Summer Workshop</u> </a></p>
-                  </div>
-                </div>
-
-                <div class="media pb_feature-v2 text-left mb-1 mt-5">
-                  <div class="pb_icon d-flex mr-3 align-self-start pb_w-15"><i class="ion-ios-reload  pb_icon-gradient"></i></div>
-                  <div class="media-body">
-                    <h3 class="mt-2 mb-2 heading">CS 106S</h3>
-                    <p class="text-sans-serif pb_font-16">A 1-unit lab for the introductory CS sequence that applies concepts learned in class to topics in the tech for good space.</p>
-                    <p class="text-sans-serif pb_font-16"> <a href="http://web.stanford.edu/class/cs106s/" target="_blank"> <u>Class Website</u> </a> </p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END section -->
-
-    <section class="pb_section bg-light pb_slant-white">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 order-2">
-            <img id="social-pic" alt="Three smiling students standing on grass holding up a large frame that says CS+Social Good" class="img-fluid">
-          </div>
-          <div class="col-lg-8 pr-md-5 pr-sm-0 order-1  mb-5">
-            <div class="row">
-              <div class="col">
-                <h2>Extracurricular Programs</h2>
-                <p class="pb_font-20">CS+Social Good also engages with our community in ways that go beyond the classroom.</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg">
-
-                <div class="media pb_feature-v2 text-left mb-1 mt-5">
-                  <div class="pb_icon d-flex mr-3 align-self-start pb_w-15"><i class="ion-ios-bookmarks-outline pb_icon-gradient"></i></div>
-                  <div class="media-body">
-                    <h3 class="mt-2 mb-2 heading">Education Outreach</h3>
-                    <p class="text-sans-serif pb_font-16">Our team is creating tech for good, post-AP exam project curricula for high school AP CS classes across the country.</p>
-                    <p class="text-sans-serif pb_font-16"> <a href="https://teachcs4good.org/" target="_blank"> <u>Education Material</u> </a> </p>
-                  </div>
-                </div>
-
-                <div class="media pb_feature-v2 text-left mb-1 mt-5">
-                    <div class="pb_icon d-flex mr-3 align-self-start pb_w-15"><i class="ion-ios-color-filter-outline pb_icon-gradient"></i></div>
-                    <div class="media-body">
-                      <h3 class="mt-2 mb-2 heading">Community</h3>
-                      <p class="text-sans-serif pb_font-16">From quarterly mixers to speaker events, we create spaces for students passionate about technology and impact to connect.</p>
-                    </div>
-                  </div>
-
-              </div>
-              <div class="col-lg">
-
-                <div class="media pb_feature-v2 text-left mb-1 mt-5">
-                  <div class="pb_icon d-flex mr-3 align-self-start pb_w-15"><i class="ion-ios-paperplane-outline pb_icon-gradient"></i></div>
-                  <div class="media-body">
-                    <h3 class="mt-2 mb-2 heading">Fellowships</h3>
-                    <p class="text-sans-serif pb_font-16">In partnership with the Haas Center, we provide fellows stipends to work on social ventures all across the world.</p>
-                    <p class="text-sans-serif pb_font-16"> <a href="https://solo.stanford.edu/opportunities/cssocial-good-spring-and-summer-fellowship-2021" target="_blank"> <u>🆕 Apply for a CS+SG fellowship!</u> </a> </p>
-                  </div>
-                </div>
-
-                <div class="media pb_feature-v2 text-left mb-1 mt-5">
-                  <div class="pb_icon d-flex mr-3 align-self-start pb_w-15"><i class="ion-ios-flask-outline pb_icon-gradient"></i></div>
-                  <div class="media-body">
-                    <h3 class="mt-2 mb-2 heading">Lab</h3>
-                    <p class="text-sans-serif pb_font-16">We're in the process of creating a permanent space where students can work on multi-year projects that create sustainable impact.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END section -->
-
-    <section class="pb_section pb_slant-light pb_pb-220">
-      <div class="container">
-        <div class="row justify-content-center mb-1">
-          <div class="col-md-6 text-center mb-5">
-            <h5 class="text-uppercase pb_font-15 mb-2 pb_color-dark-opacity-3 pb_letter-spacing-2"><strong>Reviews</strong></h5>
-            <h2>Testimonials</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md">
-            <div class="media d-block text-center testimonial_v1 pb_quote_v2
-              mb-5">
-              <div class="media-body">
-                <div class="quote-left">&ldquo;</div>
-                <div class="quote-right">&rdquo;</div>
-                <blockquote class="mb-5">Last spring, I was debating between the CS+Social Good Fellowship and a big tech company program. I have absolutely no regrets about taking the fellowship: I got to see the direct impact of my work and I got to know a group of incredible, inspiring people.</blockquote>
-                <h3 class="heading">Claire Huang</h3>
-                <span class="subheading">2017 CS+Social Good Summer Fellow</span>
-              </div>
-            </div>
-            <!-- END sync_v1 -->
-          </div>
-        </div>
-
-        <div class="row justify-content-center mb-5">
-            <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/Ci3PlREN__V/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/Ci3PlREN__V/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/Ci3PlREN__V/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Cardinal Service (@cardinalservice)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
-        </div>
-        <div class="row justify-content-center mb-1">
-          <div class="col-md-6 text-center mb-1">
-            <div class="media d-block text-center testimonial_v1 pb_quote_v2 mb-1">
-              <div class="media-body">
-                <h3 class="heading">Sasankh Munukutla</h3>
-                <span class="subheading">Hear from our former CS+Social Good
-                             President!</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-    <!-- END section -->
-
-    <section class="pb_section bg-light pb_slant-white" id="section-team">
-      <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-6 text-center mb-5">
-            <h5 class="text-uppercase pb_font-15 mb-2 pb_color-dark-opacity-3 pb_letter-spacing-2"><strong>Team</strong></h5>
-            <h2>Executive Board</h2>
-          </div>
-        </div>
-        <div class="row">
-					<div class="col-sm-6 col-md-3">
-						<div class="pb_pricing_v1 p-5 border text-center bg-white">
-							<h4 class="mb-3"></br>President</h4>
-                            <img class="img-fluid rounded-circle"
-                            src="<%=require('./images/ananya2.jpg')%>"
-                            alt="Photograph of Ananya Karthik">
-                            <p class="pb_font-15 mt-3 mb-0">Ananya Karthik</p>
-                          <p class="pb_font-15"><a
-                            href="mailto:ananya23@stanford.edu"><i class="fa
-                              fa-envelope"></i></a> | <a href="https://www.linkedin.com/in/ananya-karthik-668618193/" target="_blank"><i class="fa fa-linkedin"></i></a></p>
-						</div>
-					</div>
-          <div class="col-sm-6 col-md-3">
-            <div class="pb_pricing_v1 p-5 border text-center bg-white">
-              <h4 class="mb-3">Vice President</h4>
-              <img class="img-fluid rounded-circle"
-              src="<%=require('./images/Mona.jpg')%>" alt="Photograph of Mona
-              anvari">
-              <p class="pb_font-15 mt-3 mb-0">Mona Anvari</p>
-              <p class="pb_font-15"><a href="mailto:monaavr@stanford.edu"><i class="fa fa-envelope"></i></a> | <a href="https://www.linkedin.com/in/mona-anvari-0b92aa97/" target="_blank"><i class="fa fa-linkedin"></i></a></p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="pb_pricing_v1 p-5 border text-center bg-white">
-              <h4 class="mb-3">Financial Officer</h4>
-              <img class="img-fluid rounded-circle"
-              src="<%=require('./images/ashna.jpg')%>" alt="Photograph of Ashna
-              Khetan">
-              <p class="pb_font-15 mt-3 mb-0">Ashna Khetan</p>
-              <p class="pb_font-15"><a href="mailto:senemi@stanford.edu"><i class="fa fa-envelope"></i></a> | <a href="https://www.linkedin.com/in/senem/" target="_blank"><i class="fa fa-linkedin"></i></a></p>
-            </div>
-          </div>
-					<div class="col-sm-6 col-md-3">
-						<div class="pb_pricing_v1 p-5 border text-center bg-white">
-							<h4 class="mb-3"></br>Social Chair</h4>
-							<img class="img-fluid rounded-circle"
-              src="<%=require('./images/monica.jpg')%>" alt="Photograph of Monica
-              Hicks">
-							<p class="pb_font-15 mt-3 mb-0">Monica Hicks</p>
-                          <p class="pb_font-15"><a
-                            href="mailto:Mdhicks@stanford.edu"><i class="fa
-                              fa-envelope"></i></a> | <a
-                                                          href="https://www.linkedin.com/in/monica-d-hicks/" target="_blank"><i class="fa fa-linkedin"></i></a></p>
-                        </div>
-					</div>
-				</div>
-        <div class="row">
-          <div class="col-sm-6 col-md-3">
-            <div class="pb_pricing_v1 p-5 border text-center bg-white">
-              <h4 class="mb-3">AI+Social Good</h4>
-              <img class="img-fluid rounded-circle"
-              src="<%=require('./images/adam.jpg')%>" alt="Photograph of Adam
-              Sun">
-              <p class="pb_font-15 mt-3 mb-0">Adam Sun</p>
-              <p class="pb_font-15"><a href="mailto:adsun@stanford.edu"><i
-                  class="fa fa-envelope"></i></a> | <a
-                href="https://www.linkedin.com/in/adam-sun/" target="_blank"><i class="fa fa-linkedin"></i></a></p>
-            </div>
-          </div>
-	  <div class="col-sm-6 col-md-3">
-            <div class="pb_pricing_v1 p-5 border text-center bg-white">
-              <h4 class="mb-3">AI+Social Good</h4>
-              <img class="img-fluid rounded-circle" src="<%=require('./images/Mona.jpg')%>" alt="Photograph of Mona Anvari">
-              <p class="pb_font-15 mt-3 mb-0">Mona Anvari</p>
-              <p class="pb_font-15"><a href="mailto:monaavr@stanford.edu"><i class="fa fa-envelope"></i></a> | <a href="https://www.linkedin.com/in/mona-anvari-0b92aa97/" target="_blank"><i class="fa fa-linkedin"></i></a></p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="pb_pricing_v1 p-5 border text-center bg-white">
-              <h4 class="mb-3"></br>Discussions</h4>
-              <img class="img-fluid rounded-circle" src="<%=require('./images/yousif.jpg')%>" alt="Photograph of Yousif Mohsen">
-              <p class="pb_font-15 mt-3 mb-0">Yousif Mohsen</p>
-              <p class="pb_font-15"><a href="mailto:yousifm@stanford.edu"><i class="fa fa-envelope"></i></a> | <a href="https://www.linkedin.com/in/yousif-mohsen-7020411a5" target="_blank"><i class="fa fa-linkedin"></i></a></p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="pb_pricing_v1 p-5 border text-center bg-white">
-              <h4 class="mb-3"></br>Discussions</h4>
-              <img class="img-fluid rounded-circle"
-              src="<%=require('./images/liz2.jpg')%>" alt="Photograph of Liz Song">
-              <p class="pb_font-15 mt-3 mb-0">Liz Song</p>
-              <p class="pb_font-15"><a href="mailto:lizsong@stanford.edu"><i class="fa fa-envelope"></i></a> | <a href="https://www.linkedin.com/in/liz-song-0620811b0/" target="_blank"><i class="fa fa-linkedin"></i></a></p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 col-md-3">
-            <div class="pb_pricing_v1 p-5 border text-center bg-white">
-              <h4 class="mb-3"></br>Fellowships</h4>
-              <img class="img-fluid rounded-circle"
-              src="<%=require('./images/sherry.jpg')%>" alt="Photograph of
-              Sherry Xie">
-              <p class="pb_font-15 mt-3 mb-0">Sherry Xie</p>
-              <p class="pb_font-15"><a href="mailto:ycxie@stanford.edu"><i
-                  class="fa fa-envelope"></i></a> | <a
-                href="https://www.linkedin.com/in/yichen-sherry-xie/" target="_blank"><i class="fa fa-linkedin"></i></a></p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="pb_pricing_v1 p-5 border text-center bg-white">
-              <h4 class="mb-3"></br>CS106S</h4>
-              <img class="img-fluid rounded-circle" src="<%=require('./images/matthewe.jpg')%>" alt="Photograph of Matthew Early">
-              <p class="pb_font-15 mt-3 mb-0">Matthew Early</p>
-	      <p class="pb_font-15"><a href="mailto:mmearly@stanford.edu"><i class="fa fa-envelope"></i></a> | <a href="https://www.linkedin.com/in/matthew-e-578726168/" target="_blank"><i class="fa fa-linkedin"></i></a></p></p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="pb_pricing_v1 p-5 border text-center bg-white">
-              <h4 class="mb-3"></br>CS106S</h4>
-              <img class="img-fluid rounded-circle" src="<%=require('./images/miles.jpg')%>" alt="Photograph of Miles McCain">
-              <p class="pb_font-15 mt-3 mb-0">Miles McCain</p>
-              <p class="pb_font-15"><a href="mailto:mccain@stanford.edu"><i class="fa fa-envelope"></i></a> | <a href="https://www.linkedin.com/in/r-miles-mccain-a215b1199/" target="_blank"><i class="fa fa-linkedin"></i></a></p></p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="pb_pricing_v1 p-5 border text-center bg-white">
-              <h4 class="mb-3">Education</br> Outreach</h4>
-              <img class="img-fluid rounded-circle"
-              src="<%=require('./images/monica.jpg')%>" alt="Photograph of Monica
-              Hicks">
-              <p class="pb_font-15 mt-3 mb-0">Monica Hicks</p>
-              <p class="pb_font-15"><a href="mailto:Mdhicks@stanford.edu"><i
-                  class="fa fa-envelope"></i></a> | <a
-                href="https://www.linkedin.com/in/monica-d-hicks/" target="_blank"><i class="fa fa-linkedin"></i></a></p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 col-md-3">
-              <div class="pb_pricing_v1 p-5 border text-center bg-white">
-                  <h4 class="mb-3">Impact<br/>Lab</h4>
-                  <img class="img-fluid rounded-circle"
-                  src="<%=require('./images/philip.jpg')%>" alt="Photograph of
-                  Philip Baillargeon">
-                  <p class="pb_font-15 mt-3 mb-0">Philip Baillargeon</p>
-                  <p class="pb_font-15"><a href="mailto:pabaill@stanford.edu"><i class="fa fa-envelope"></i></a> | <a href="https://www.linkedin.com/in/philip-baillargeon-b1258a227/" target="_blank"><i class="fa fa-linkedin"></i></a></p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-              <div class="pb_pricing_v1 p-5 border text-center bg-white">
-                  <h4 class="mb-3">Impact<br/>Lab</h4>
-                  <img class="img-fluid rounded-circle" src="<%=require('./images/chris.jpg')%>" alt="Photograph of Chris Pondoc">
-                  <p class="pb_font-15 mt-3 mb-0">Chris Pondoc</p>
-                  <p class="pb_font-15"><a href="mailto:clpondoc@stanford.edu"><i class="fa fa-envelope"></i></a> | <a href="https://www.linkedin.com/in/pondoc/" target="_blank"><i class="fa fa-linkedin"></i></a></p>
-              </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="pb_pricing_v1 p-5 border text-center bg-white">
-              <h4 class="mb-3">Design &amp; Marketing</h4>
-              <img class="img-fluid rounded-circle" src="<%=require('./images/frank.jpg')%>" alt="Photograph of Frank Zhao">
-              <p class="pb_font-15 mt-3 mb-0">Frank Zhao</p>
-              <p class="pb_font-15"><a href="mailto:frankz24@stanford.edu"><i class="fa fa-envelope"></i></a> | <a href="https://www.linkedin.com/in/frankzhao01/" target="_blank"><i class="fa fa-linkedin"></i></a></p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="pb_pricing_v1 p-5 border text-center bg-white">
-              <h4 class="mb-3"></br>Studio</h4>
-              <img class="img-fluid rounded-circle" src="<%=require('./images/alissa.jpg')%>" alt="Photograph of Alissa Vuillier">
-              <p class="pb_font-15 mt-3 mb-0">Alissa Vuillier</p>
-              <p class="pb_font-15"><a href="mailto:alissav@stanford.edu"><i class="fa fa-envelope"></i></a> | <a href="https://www.linkedin.com/in/alissa-vuillier-b96123202/" target="_blank"><i class="fa fa-linkedin"></i></a></p>
-            </div>
-          </div>
-        </div>
-    </section>
-    <!-- ENDs ection -->
-
-    <section class="pb_section pb_slant-white" id="section-faq">
-      <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-6 text-center mb-5">
-            <h5 class="text-uppercase pb_font-15 mb-2 pb_color-dark-opacity-3 pb_letter-spacing-2"><strong>FAQ</strong></h5>
-            <h2>Frequently Asked Questions</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md">
-            <div id="pb_faq" class="pb_accordion" data-children=".item">
-              <div class="item">
-                <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq1" aria-expanded="true" aria-controls="pb_faq1" class="pb_font-22 py-4">When was CS+Social Good founded?</a>
-                <div id="pb_faq1" class="collapse show" role="tabpanel">
-                  <div class="py-3">
-                  <p>CS+Social Good was founded in 2015 by a team of students led by Lawrence Lin Murata. Our founding team includes Edward Wang, Gloria Chua, Katherine Liu, Manu Chopra, Neil Chaudhari, Ngoc Bui, Priya Ganesan, SunMi Lee, Vicki Niu, and Vinamrata Singal.</p>
-                  <p>As of 2018, all of our founding members have graduated, but our work today continues to build off of their foundational vision. (We <i class="ion-ios-heart pb_icon-gradient"></i> our alumni!)</p>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq2" aria-expanded="false" aria-controls="pb_faq2" class="pb_font-22 py-4">How is CS+Social Good structured?</a>
-                <div id="pb_faq2" class="collapse" role="tabpanel">
-                  <div class="py-3">
-                    <p>CS+Social Good espouses a flat leadership structure. While our President, Vice President, and Financial Officer oversee the workings of the entire organization, our specific initiatives are run by separate subteams. Our executive board is composed of our President, Vice President, Financial Officer, and each of the subteam heads.</p>
-                    <p>Each subteam is led by subteam head(s), and is composed of 3-5 subteam members, although our classes usually have a larger teaching staff. We encourage our members to start their own subteam if they have an idea for a new initiative that falls somewhere within the tech for good space.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq3" aria-expanded="false" aria-controls="pb_faq3" class="pb_font-22 py-4">How do I get involved in CS+Social Good?</a>
-                <div id="pb_faq3" class="collapse" role="tabpanel">
-                  <div class="py-3">
-                    <p>There are a variety of ways to get involved in CS+Social Good. You can enroll in our classes (which may be application-based, depending on the class), attend our speaker and mixer events, sign up for our newsletter, and apply for one of our fellowships.</p>
-                    <p>If you'd like to be part of our leadership team, we accept applications to join our team every fall.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq4" aria-expanded="false" aria-controls="pb_faq4" class="pb_font-22 py-4">Do I have to know how to code to contribute?</a>
-                <div id="pb_faq4" class="collapse" role="tabpanel">
-                  <div class="py-3">
-                    <p>Absolutely not! Tech affects everyone, and we need a diverse set of perspectives and skills to create effective, inclusive change.</p>
-                    <p>More than any technical skill, the traits we care most about include empathy, humility, motivation, kindness, and a willingness to learn.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="item">
-                <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq5" aria-expanded="false" aria-controls="pb_faq5" class="pb_font-22 py-4">Do I have to attend Stanford to join the community?</a>
-                <div id="pb_faq5" class="collapse" role="tabpanel">
-                  <div class="py-3">
-                      <p>You don't have to be at Stanford to engage with CS+Social Good! We maintain an <a href="https://www.facebook.com/groups/cs4good/" target="_blank">active Facebook group</a> of over 2,000 members from all across the world.</p>
-                      <p>In addition, anyone can sign up for our weekly newsletter via <a href="https://mailman.stanford.edu/mailman/listinfo/cs-for-social-good" target="_blank">Stanford Mailman</a>. Though most of the content is targeted towards Stanford students, we also feature readings and opportunities for the wider community.</p>
-                      <p>If you'd like to start an organization like CS+Social Good at your own school, check out <a href="https://techshift.org/" target="_blank">TechShift</a>, a national alliance of tech for good organizations on college campuses! We're a proud TechShift member org, and they can help you with resources and mentorship to start your own tech for good organization.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="item">
-                <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq6" aria-expanded="false" aria-controls="pb_faq6" class="pb_font-22 py-4">My organization wants to work together. How do we get in touch?</a>
-                <div id="pb_faq6" class="collapse" role="tabpanel">
-                  <div class="py-3">
-                    <p>To publicize an event or opportunity to our mailing list, please send an email with the relevant information to <a href="mailto:cs-for-social-good@lists.stanford.edu">cs-for-social-good@lists.stanford.edu</a> and we will put it in our next weekly newsletter. If the opportunity is time-sensitive, please forward it to us at least a week in advance.</p>
-                    <p>If you would like to contact us for any other reason, please email <a href="mailto:cs4good@cs.stanford.edu">cs4good@cs.stanford.edu</a>. If you have specific questions about a particular subteam, please feel free to email the relevant board member (see Team section).</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="pb_xl_py_cover overflow-hidden pb_slant-light pb_gradient_v1 cover-bg-opacity-8" id="section-contact">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-md-5 justify-content-center">
-            <h2 class="heading mb-5 pb_font-40">We'd love to hear what you think.</h2>
-            <div class="sub-heading">
-              <p class="mb-4">Feel free to drop us a line using this form. Whether it's an invitation to collaborate, feedback on our programs, or questions about our philosophy, we want to hear from you.</p>
-            </div>
-          </div>
-          <div class="col-md-1"></div>
-          <div class="col-md-5">
-             <form name="contact-form" method="post" data-netlify="true" netlify-honeypot="bot-field" accept-charset="UTF-8" class="bg-white rounded pb_form_v1">
-              <input hidden name="bot-field" />
-              <h2 class="mb-4 mt-0 text-center">Contact Form</h2>
-              <div class="form-group">
-                <input type="text" class="form-control py-3 reverse" placeholder="Name" name="name">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control py-3 reverse" placeholder="Email" name="email">
-              </div>
-              <div class="form-group">
-                <textarea class="form-control py-3 reverse" rows="4" placeholder="Type your message here..." name="message"></textarea>
-              </div>
-              <div class="form-group">
-                <input type="submit" class="btn btn-cssg-meadow btn-lg btn-block pb_btn-pill btn-shadow-meadow" value="Send Message">
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END section -->
-
-    <footer class="pb_footer bg-light" role="contentinfo">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col">
-            <ul class="list-inline">
-              <li class="list-inline-item"><a href="https://www.facebook.com/cs4good/" target="_blank" class="p-2"><i class="fa fa-facebook"></i></a></li>
-              <li class="list-inline-item"><a href="https://twitter.com/cs4good" target="_blank" class="p-2"><i class="fa fa-twitter"></i></a></li>
-              <li class="list-inline-item"><a href="https://www.linkedin.com/company/cs-social-good/" target="_blank" class="p-2"><i class="fa fa-linkedin"></i></a></li>
-              <li class="list-inline-item"><a href="https://medium.com/cs-social-good" target="_blank" class="p-2"><i class="fa fa-medium"></i></a></li>
-              <li class="list-inline-item"><a href="mailto:cs4good@cs.stanford.edu" class="p-2"><i class="fa fa-envelope"></i></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col text-center">
-            <p class="pb_font-14">&copy; 2022 CS+Social Good.</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <div id="pb_loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#1d82ff"/></svg></div>
-	</body>
 </html>
